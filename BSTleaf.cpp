@@ -47,6 +47,10 @@ void printleaf(node * root){
 }
 
 int main(){
+<<<<<<< HEAD
     node * BST = NULL;
     BST = insert(10,BST);
+=======
+    cout<<"hello";
+>>>>>>> temp
 }
