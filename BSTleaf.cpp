@@ -47,5 +47,6 @@ void printleaf(node * root){
 }
 
 int main(){
-    
+    node * BST = NULL;
+    BST = insert(10,BST);
 }
