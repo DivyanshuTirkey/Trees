@@ -47,5 +47,5 @@ void printleaf(node * root){
 }
 
 int main(){
-    
+    cout<<"hello";
 }
