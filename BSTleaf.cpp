@@ -47,10 +47,17 @@ void printleaf(node * root){
 }
 
 int main(){
-<<<<<<< HEAD
     node * BST = NULL;
-    BST = insert(10,BST);
-=======
-    cout<<"hello";
->>>>>>> temp
+    BST = insert(1,BST);
+    insert(2,BST);
+    insert(4,BST);
+    insert(3,BST);
+    insert(5,BST);
+    insert(6,BST);
+    insert(7,BST);
+    insert(8,BST);
+    insert(9,BST);
+    insert(10,BST);
+    printleaf(BST);
+    cout<<endl;
 }
