@@ -33,15 +33,17 @@ void inOrder(node * root){
     }
 }
 
-unsigned int getLeafCount(struct node* node)
-{
-    if(node == NULL)    
-        return 0;
-    if(node->left == NULL && node->right == NULL)
-        return 1;        
-    else
-        return getLeafCount(node->left)+
-            getLeafCount(node->right);
+void printleaf(node * root){
+    if (root == NULL)
+        return;
+    if (root->left == NULL && root->right == NULL){
+        cout<<root->data<<" ";
+        return;
+    }
+    if (root->left != NULL)
+        printleaf(root->left);
+    if (root->right != NULL)
+        printleaf(root->right);
 }
 
 int main(){
@@ -56,6 +58,6 @@ int main(){
     insert(8,BST);
     insert(9,BST);
     insert(10,BST);
-    cout<<"number of leaves "<<getLeafCount(BST);
+    printleaf(BST);
     cout<<endl;
 }
